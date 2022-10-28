@@ -1,0 +1,407 @@
+body{
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+.body-header{
+height:90vh;    
+background-image:url("image/macbook_mouse.jpg");
+background-position: center;
+background-size:cover;
+position: relative;/*to stick the my-imgae over the background image*/
+}
+
+.text-center{
+    text-align: center;
+}
+.Hor-list li{
+    display:inline-block;
+    margin: 4px 8px;
+}
+
+.Hor-list li a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-style: italic;
+    transition: color 1s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: rgb(207, 201, 201);
+    border-bottom: 1px solid rgb(207, 201, 201);
+}
+
+.name{
+    color:white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-top: 200px;
+    font-size: xxx-large;
+}
+
+
+/* Social icon */
+
+.social-icon{
+    margin-right: 40px;
+}
+.social-icon li a i{
+    color: rgb(80, 235, 241);
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    transition: color 1s;
+}
+
+
+.social-icon li a i:hover{
+    color:rgb(251, 164, 4);
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/* setting alternate colors in the section */
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading span{
+    text-shadow: 2px 2px #cdcece;
+    color:#2857a4;
+}
+
+
+/* About */
+#my-image {
+    position: sticky;
+    margin-top: -150px;
+}
+
+#my-image img{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 125px;
+    box-shadow: 0px 0px 3px 5px white;
+}
+#about p{
+    margin:0px 100px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 4px;
+    line-height: 1.4rem;
+}
+mark{
+  color: rgb(61, 10, 170);  
+  background: none;/*to remove highlighted text*/
+}
+
+/* skills */
+.skills-display {
+    width: 70%;
+    /*height: 100px;*/
+    /*border: 2px solid black; 	*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:auto;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.skill-progress > div {/* applied to direct child to skill-progress */  
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+/* Commom margin classes */
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+/* percentage classes  */
+.eighty-five-percent{
+    width:85%;
+    height:inherit;
+}
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+/* Work Experience */
+.Time{
+    position: relative;
+    height:75%;
+    width: 75%; 
+    margin:auto;
+}
+.Time-Line{
+    position: relative;
+    min-height:100px;
+    width: 40%;
+    margin: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Time-Line:nth-child(2n){
+    left:58%;
+}
+.Divider{
+    position:absolute;
+    width:0%;
+    height:75%;
+    left:50%;
+    bottom: 13%;
+    padding-right: 1%;
+    border-left: 3px dotted lightblue;
+}
+#aeroplane {
+    color: #8631e1;
+    position: sticky;
+    /* margin-right:10%; *//*since divider width is 0 therefore no margin left or right*/
+    top:10%; /*means after scrolling how much distance from top the pos of element be sticked*/
+    margin-top:-20px;
+    transform: rotate(90deg);
+}
+
+.Time-Line:nth-child(2n)::after{
+    content:'';
+    top:30%;
+    border-radius:50%;
+    position:absolute;
+    height:0.5rem;
+    width:0.5rem;
+    left:-21.65%;
+    background-color:rgba(172, 167, 174, 0.733);   
+    z-index:1;
+}
+.Time-Line:nth-child(2n+1)::after{
+    content:'';
+    top:30%;
+    border-radius:50%;
+    position:absolute;
+    height:0.5rem;
+    width:0.5rem;
+    right:-25%;
+    background-color:rgba(172, 167, 174, 0.733);
+    z-index:1;
+}
+/* content in the 4 divs */
+.Time-Line i{
+    color:#04cffc;
+}
+.Time-Line .post {
+    height: 175px;
+    width:40%;
+    display:block;
+}
+.Time-Line .post div{
+    margin-top: -15%;
+}
+
+.Time-Line h4{
+    color:#8631e1;
+    font-size: large;
+}
+
+.post .content {
+    position:absolute; 
+    font-size: medium;
+    margin-top: 150%;
+    margin-left: -50%;
+    transform: translate(-15%,50%);
+}
+
+
+/* before after are inline so does able to show image, so use background-size:cover */
+/* .Time-Line h4::before{
+ margin-right:205px;
+ content:'';
+ border-radius:50%;
+ height:10px;
+ width:10px;
+ padding-right:60px;
+ padding-bottom:20px;
+ display: inline-block;
+ background-size:cover;
+ background-image:url("image/cn.jpg");
+} */
+/* Portfolio Section */
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    .Divider{
+        left:-5.8%;
+    }
+
+    .Time-Line{
+        left: 0% !important;/*important is used for considering this attr as final*/
+        width:80%;
+    }
+    .Time-Line:nth-child(2n)::after{
+        left:-10%;
+    }
+    .Time-Line:nth-child(2n+1)::after{
+        left:-10%;
+    }
+}
+
+#port{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.port-image {
+    max-width: 340px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.port-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.port-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.port-image:hover {
+    box-shadow: 0 0 20px #babbbb;
+}
+
+.port-image:hover .port-details {
+    background-color: #80808078;
+    color: rgb(10, 10, 10);
+}
+
+/* Contact section */
+#contact {
+    height:100%;
+    width:100%;
+    background:linear-gradient(to right,rgb(2, 70, 147),rgb(106, 1, 106));
+}
+#contact span{
+    color:white;
+}
+#contact-form-container {
+    width: 50%;
+    display:inline-block;
+}
+#contact-form input,textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+/* Address */
+#my-details-container{
+    display:inline-block;
+    width:45%;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#my-details-container h3{
+    margin-top: 50px;
+    font-size:x-large;
+}
+#my-details-container p{
+    font-size:large;
+    font-style: italic;
+}
+#my-details-container div{
+    font-size:large;
+    line-height: 25px;
+    font-style: italic;
+}
+
+
+
