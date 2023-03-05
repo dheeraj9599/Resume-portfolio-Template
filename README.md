@@ -1,5 +1,5 @@
 # Resume-portfolio-Template
-I made a responsive template for resume/portfolio which have different sections like - about yourself, skills, work experience, Education, projects etc. UI/UX is created from scratch using Html, Css and made interactive using Javascript.
+I made a responsive template for resume/portfolio which have different sections like - about yourself, skills, work experience, Education, projects etc. Build from scratch using Html, Css and made interactive using Javascript.
 
 ![Screenshot (29)](https://user-images.githubusercontent.com/92773853/198693407-965e37da-1896-4afa-947b-b7b6c854d027.png)
 
